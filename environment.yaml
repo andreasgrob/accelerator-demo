@@ -1,0 +1,5 @@
+gcp-project-id: "agrob-accelerator-auto-3" # ID of the GCP project to be created and used
+gcp-folder-id: "277963659607" # ID of the folder where the project will reside: cloudbees.com/enablement/professional-services
+gcp-region: "us-east1" # region us-east1 required by company policy
+gcp-zone: "us-east1-b"
+installer-url: "https://downloads.cloudbees.com/cloudbees-build-acceleration/Release_12.1/12.1.0.105738/linux/CloudBeesAccelerator-12.1.0.105738-Linux-x86_64-Install"

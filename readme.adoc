@@ -1,0 +1,22 @@
+= CloudBees Build Acceleration Demo
+
+== Demo: Building with emake
+
+. Insert a free `+gcp-project-id+` in `+environment.yaml+` and possibly change the folder under which the project will be created.
+. Create a `+license.txt+` file, containing an Accelerator license.
+  ** You will receive a 30 day license a few minutes after https://www.cloudbees.com/products/build-acceleration/trial[signing up for a trial].
+. Run `+./run.sh+`. This will:
+  ** Create the project
+  ** Setup networking
+  ** Provision the VMs
+  ** Install Accelerator on the VMs
+  ** Run a demo of building cmake with emake
+
+From here you can try your own builds or modify this script to your needs. Keep in mind to install dependencies on both VMs: emake-machine and agents. After installing on the agents VM, you need to restart it.
+
+To ssh into one of the three VMs (agents, emake-machine, cluster-manager) you can use `+./ssh.sh <machine name>+`
+
+== ToDo
+
+* Explore the UI
+* Test cloud bursting
